@@ -8,6 +8,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   padding: 36px 40px;
+  line-height: 160%;
 }
 button {
   padding: 0;
@@ -16,4 +17,57 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+.main{
+  display: flex;
+  max-width: 1840px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 0 auto;
+}
+.overview,
+.banner{
+  width: calc(100% / 2);
+}
+.overview{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 105px 70px;
+}
+.banner{
+  background: url(../images/banner.png) center/cover no-repeat;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 456px;
+}
+.title{
+  font-size: 30px;
+  color: #1f4284;
+}
+.description{
+  max-width: 530px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #727272;
+}
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 341px;
+  border-radius: 60px;
+  padding: 12px 12px 12px 24px;
+  background: #244c98;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+}
+.btn-arrow{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  padding: 6px;
 }
