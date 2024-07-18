@@ -18,7 +18,7 @@
   .description{
     max-width: 100%;
   }
-  .btn{
+  .btn-open{
     max-width: 261px;
     padding-left: 18px;
   }
@@ -27,7 +27,7 @@
   .banner{
     min-height: 220px;;
   }
-  .btn{
+  .btn-open{
     max-width: 379px;
     padding-left: 18px;
   }

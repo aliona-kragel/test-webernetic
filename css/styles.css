@@ -18,6 +18,17 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
+a, img {
+  border: none;
+  outline: none;
+}
+input {
+  border: none;
+  outline: none; 
+}
 .main{
   display: flex;
   max-width: 1840px;
@@ -51,7 +62,7 @@ button {
   font-size: 17px;
   color: #727272;
 }
-.btn{
+.btn-open{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,4 +81,108 @@ button {
   height: 36px;
   background: #fff;
   padding: 6px;
+}
+.modal-background{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5);}
+
+.modal{
+  padding: 24px;
+  width: 452px;
+  height: 575px; /* change */
+  background: #f0f4fc;
+  border-radius: 10px;
+  padding: 24px;
+}
+.modal__control{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-close{
+  border-radius: 10px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background: #fff;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form__title{
+  font-weight: 500;
+  font-size: 24px;
+  color: #323232;
+  margin-bottom: 18px;
+}
+.form__group{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+.field{
+  background: #d7e2f6;
+  border-radius: 10px;
+  padding: 24px;
+  width: 100%;
+}
+.field,
+.field::placeholder{
+  font-weight: 500;
+  font-size: 18px;
+  color: #1f4284;
+}
+.remember{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.remember__label{
+  font-weight: 400;
+  font-size: 18px;
+  color: #323232;
+}
+input{
+  border: none
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px; 
+  background-color: red;
+}
+.form-btn{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
+.btn-filled{
+  color: #fff;
+  border-radius: 4px;
+  padding: 18px 12px;
+  background: #244c98;
+  margin-bottom: 4px;
+}
+.btn-bordered{
+  border: 1px solid #244c98;
+  border-radius: 4px;
+  padding: 18px 12px;
+  color: #244c98;
+}
+.restore-link{
+  font-weight: 500;
+  font-size: 20px;
+  color: #244c98;
+  margin-bottom: 36px;
 }
