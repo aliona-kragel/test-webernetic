@@ -15,3 +15,4 @@ modalBackground.addEventListener("click", function (event) {
     modalBackground.style.display = "none";
   }
 });
+

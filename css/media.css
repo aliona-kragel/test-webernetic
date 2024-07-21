@@ -10,7 +10,8 @@
     width: 100%;
   }
   .banner{
-    min-height: 360px;;
+    min-height: 360px;
+    border-bottom-left-radius: 10px;
   }
   .overview{
     padding: 24px;
